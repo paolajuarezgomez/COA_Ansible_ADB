@@ -47,6 +47,8 @@ VAULT_PASSWORD
 * Create a new branch.
 * In order to do this we will use the playbook COA_Ansible_ADB/ansible/playbooks/playbook_confBackup.yaml included in this repo.
 * Add your secrets and create a new **./vault/vault_backup.yaml** file with ansible-vault. For more information check **COA_Ansible_ADB/ansible/vault/README.MD** file 
+* Create **config** file in the vault directory. Read the Readme in **COA_Ansible_ADB_DG_Switchover/ansible/vault/** for more information about using Ansible-vault.
+* Encrypt your api key for use OCI CLI and add the file to **COA_Ansible_ADB_DG_Switchover/ansible/vault/oci_api_key.pem**
 * Add you variables in the **./variables/var_backup.yaml** file.
 * Add the content of the **COA_Ansible_ADB/ansible/playbooks/playbook_confBackup.yaml** file in **./ansible/playbook.yaml** file and commit the changes.
 
